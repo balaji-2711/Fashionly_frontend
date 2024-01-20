@@ -22,7 +22,7 @@ function Cart() {
       key: "rzp_test_2MEKNGZ0d9QZQx",
       amount: data.amount,
       currency: data.currency,
-      name: "Fashionly",
+      name: "TravelX",
       description: "XYZ",
       order_id: data.id,
 
@@ -47,7 +47,7 @@ function Cart() {
     if (cartProducts.cartTotalQuantity > 0) {
       const amount = cartProducts.cartTotalAmount;
       let res = await axios.post(`${url}/payment/order`, { amount });
-    //   console.log(res);
+      //   console.log(res);
       handleOpenRazorpay(res.data.order);
     } else {
       toast.error("Please add product");

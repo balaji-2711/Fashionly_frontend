@@ -11,20 +11,31 @@ function About() {
           <br />
           <h4>
             <span className="about-name ">
-              <b>Fashionly </b>
+              <b>Travel-X </b>
             </span>
-            <b> caters to thoughtful shoppers ,</b>
+            <b> is a professional leading travel company,</b>
             <br />
-            <b>who appreciate unique designs and</b>
+            <b>founded in the 2024 by YYY.</b>
+            <br />
+            <b>
+              Our mission is to serve our regualar clients with package
+              including
+            </b>
+            <br />
+            <b>
+              accomodation, sightseeing with local guides, taste of local
+              cuisines with
+            </b>
             <br />
             <span className="about-name">
               <b> top quality</b>
             </span>
             <br />
-            <b>pieces you just can’t find anywhere else.</b> <br />
+            {/* <b>pieces you just can’t find anywhere else.</b> <br />
             <b>
-            We are constantly curating fresh new collections and
-            </b> <br /> <b> looking for the next big thing our customers will love.</b>
+              We are constantly curating fresh new collections and
+            </b> <br />{" "}
+            <b> looking for the next big thing our customers will love.</b> */}
           </h4>
           <br />
         </div>

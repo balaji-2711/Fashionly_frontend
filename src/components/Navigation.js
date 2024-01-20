@@ -2,20 +2,23 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
+// import { FaShoppingCart } from "react-icons/fa";
+import { SiYourtraveldottv } from "react-icons/si";
+
 function Navigation() {
   let navigate = useNavigate();
 
   return (
     //  <--Navigation details-->
-    <div className="navigation container-fluid">
+    <div className="navigation container-fluid ">
       <Navbar bg="#0E1630" expand="lg">
         <Container fluid>
           <div className="icon">
-            <FaShoppingCart />
+            {/* <FaShoppingCart /> */}
+            <SiYourtraveldottv />
           </div>
           <Navbar.Brand style={{ color: "white", fontSize: "2em" }}>
-            <span className="color-green">F</span>ashionly
+            <span className="color-green">T</span>ravelX
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -24,15 +27,21 @@ function Navigation() {
               style={{ maxHeight: "10em", gap: "3em", color: "red" }}
               navbarScroll
             >
-              <Nav.Link href="#home" style={{ color: "#808DAD" }}>
+              <Nav.Link
+                href="#home"
+                style={{
+                  color: "white",
+                  boxShadow: "1px 1px 1.1em lightgreen;",
+                }}
+              >
                 Home
               </Nav.Link>
 
-              <Nav.Link href="#about" style={{ color: "#808DAD" }}>
+              <Nav.Link href="#about" style={{ color: "white" }}>
                 About Us
               </Nav.Link>
 
-              <Nav.Link href="#contact" style={{ color: "#808DAD" }}>
+              <Nav.Link href="#contact" style={{ color: "white" }}>
                 Contact
               </Nav.Link>
 

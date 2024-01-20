@@ -42,7 +42,6 @@ function CustomerSignUp() {
 
   //to post the customer details in db
   let handleSignUp = async (values) => {
-   
     try {
       let res = await axios.post(`${url}/customer/customer-sign-up`, {
         firstName: values.firstName,
@@ -58,7 +57,6 @@ function CustomerSignUp() {
 
       console.log(res);
       if (res.status === 201) {
-        
         toast.success(res.data.message);
         navigate("/customer-login");
       }
@@ -68,10 +66,9 @@ function CustomerSignUp() {
     }
   };
 
-  
   return (
     <>
-      <div>
+      <div className="first">
         <Formik
           initialValues={{
             firstName: "",
@@ -87,19 +84,17 @@ function CustomerSignUp() {
           }}
           validationSchema={CustomerSchema}
           onSubmit={(values) => {
-           
             handleSignUp(values);
           }}
         >
-        
           {({ errors, touched }) => (
-            <div className="container-fluid customer-signUp">
+            <div className="customer-signUp">
               <div className="customer-signUpForm">
                 <div className="customer-signUp-title">
-                  <h1>Welcome to Fashionly</h1>
+                  <h4>Welcome to TravelX</h4>
                 </div>
 
-                <div className=" customer-SignUp-header text-center text-danger">
+                <div className=" customer-SignUp-header text-center text-success">
                   <p>Customer-SignUp</p>
                 </div>
 
@@ -267,7 +262,7 @@ function CustomerSignUp() {
                   </div>
                 </Form>
 
-                <div className="mt-3 text-center pb-2">
+                <div className="signup-login mt-4 text-center pb-2 ">
                   <h5>Already have an account? Please Login</h5>
                   <Button
                     variant="success"

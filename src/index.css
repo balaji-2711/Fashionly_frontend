@@ -1,15 +1,42 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: cursive;
+  font-family: sans-serif;
   box-sizing: border-box;
 }
+
+.form-control {
+  height: 30px;
+  width: 10px;
+  border-radius: 60px;
+  background-color: #a90433;
+  outline: none;
+  padding: 45px;
+}
+
+.form-group {
+  border-radius: 60px;
+  /* padding: 0, 0, 0, 45px; */
+}
+
+.signup-login {
+  color: #e7ebe9;
+}
+
+.container_left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container_left .caption-header {}
 
 /* home page */
 .home {
   width: 100%;
   background-size: contain;
-  background-color: #105975;
+  background-color: #0d0f0c;
   background-repeat: no-repeat;
   background-position: center;
   scroll-behavior: smooth;
@@ -17,27 +44,92 @@
 
 #home {
 
-  background-image: url("https://t4.ftcdn.net/jpg/06/28/77/29/240_F_628772979_HnJRXKfl5sGN8Qj4Nlkl4j2jwebdXe9X.jpg");
+  /* background-image: url("https://t4.ftcdn.net/jpg/06/28/77/29/240_F_628772979_HnJRXKfl5sGN8Qj4Nlkl4j2jwebdXe9X.jpg"); */
+  /* background-image: url("https://t3.ftcdn.net/jpg/00/65/48/24/360_F_65482493_rfO2qgXFvfGKwwchF8w4MG5swAdfBbut.jpg"); */
+  /* background-image: url("https://www.shutterstock.com/image-vector/travel-time-vector-background-design-260nw-2173505403.jpg"); */
+  /* background-image: url(" https://hips.hearstapps.com/hmg-prod/images/large-group-of-happy-friends-in-mountains-area-royalty-free-image-1653422631.jpg?crop=0.668xw:1.00xh;0.0609xw,0&resize=1200:*"); */
+  /* background-image: url("https://c8.alamy.com/comp/P2RPKR/travel-around-the-world-vector-background-design-with-famous-landmarks-and-tourist-destination-elements-in-different-places-for-tourism-vector-P2RPKR.jpg"); */
+  /* background-image: url("https://as2.ftcdn.net/v2/jpg/05/10/75/01/1000_F_510750167_SdgAKSuCTfwAqPW7issA7B6Ox4QbvSwi.jpg"); */
+  background-image: url("https://www.khyberhotels.com/blog/wp-content/uploads/2023/11/a19176961bdeaff5b5d2bb93a0adbcaf.jpg");
+  /* background-image: url("https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg"); */
+
+
+
+  background-color: #f40f0f;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  /* height: 190vh; */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 1px;
+  width: 100%;
+  padding: 6px;
+  margin-right: 50px;
+
+
 
 
 }
 
+#home h1 {
+  font-size: 4em;
+  /* right: 20px;
+  left: 60px; */
+  margin-top: 40px;
+  margin-right: 60px;
+}
+
+
 .caption-header {
-  margin-bottom: 15em;
+  margin-bottom: 30em;
+  /* background: #1978c6; */
+  border-radius: 60%;
+  /* height: 100px; */
+  box-shadow: 1px 1px 1.1em lightgreen;
+  /* display: flex; */
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 500px;
+  margin-top: 800px;
+  /*for this  ... y not working/*
+  /* left: 250px; */
+
+}
+
+.button {
+  /* margin-left: 100px; */
+  /* margin-top: 25px; */
+  margin-right: 170px;
+  /* padding: 100px; */
+  margin-bottom: 400px;
+  /* width: 500px; */
+  /* size: 80px; */
+}
+
+.explore-button {
+  /* margin-right: 90px; */
+  /* padding: 9px; */
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.para {
+  color: white;
+  font-size: 20px;
+  margin-right: 190px;
+  /* width: 10px; */
 }
 
 /* about page */
 #about {
 
-  background-image: url("https://t3.ftcdn.net/jpg/05/08/80/20/240_F_508802083_H7q5pAfTFBRdObFIExIZRgEy6qKElMV5.jpg");
+  /* background-image: url("https://t3.ftcdn.net/jpg/05/08/80/20/240_F_508802083_H7q5pAfTFBRdObFIExIZRgEy6qKElMV5.jpg"); */
+  background-image: url("  https://media.istockphoto.com/id/1398321253/photo/green-retro-car-with-luggage-on-the-roof-and-palm-tree-on-blue-background.jpg?s=612x612&w=0&k=20&c=Z0azSghl-E2InirxL8h2pgZJJ7vPmOyxmi3Druy22Nw=");
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -102,32 +194,56 @@
 /* customer sign up */
 
 .customer-signUp {
+  /* try t
+  is */
+  /* background-image: url("  https://scontent.fmaa12-2.fna.fbcdn.net/v/t39.30808-6/322190635_1345969802867685_3060862018728825820_n.jpg?stp=dst-jpg_p180x540&_nc_cat=110&ccb=1-7&_nc_sid=173fa1&_nc_ohc=MZQe2yc0q8gAX-28FyS&_nc_ht=scontent.fmaa12-2.fna&oh=00_AfBsDvChQsGeu_8CUj8h7pze3g5PUZmAuFc1q4UqBseJbg&oe=65AF3A75"); */
 
-  background-image: url("https://t4.ftcdn.net/jpg/06/23/24/03/240_F_623240349_aCmGPKwic0PIumohlr0jgYPzAozuJdE3.jpg");
+  /* background-image: url("https://t4.ftcdn.net/jpg/06/23/24/03/240_F_623240349_aCmGPKwic0PIumohlr0jgYPzAozuJdE3.jpg"); */
+  /* background-image: url("https://www.travelandleisure.com/thmb/4QkCz66MFZiEji0e2m52AS5NwpE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/key-west-beach-florida-BEACHWKNDS0620-e2faf227f60c48978cea6c62bccf5650.jpg"); */
+  /* background-image: url(" https://www.psychologs.com/wp-content/uploads/2023/08/Hodophile-A-Person-who-Loves-to-Travel.jpg"); */
+  background-image: url("https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg");
+
+  /* https: //youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   overflow-x: scroll;
+  margin-left: 10px;
 }
 
 .customer-signUpForm {
-  width: 450px;
-  height: 100vh;
-  margin-top: 8em;
+  width: 480px;
+  height: 82vh;
+  margin-top: 2em;
+  /* background-color: white; */
+  margin-left: 150px;
+  border-radius: 30px;
+  position: absolute;
+  /* left: 565px; */
+  right: 850px;
+  bottom: 120px;
+  /* background: linear-gradient(to top, rgba(190, 124, 66, 0.8)50%, rgba(190, 124, 66, 0.8)50%); */
+  box-shadow: 1px 1px 1.1em rgb(61, 179, 61);
+
+
 }
+
 
 .customer-signUp-title {
   display: flex;
   justify-content: center;
-  color: rgb(211, 11, 11);
+  color: rgb(236, 17, 17);
+  font-size: 1em;
 }
+
 
 .customer-SignUp-header {
   font-size: 2em;
+  color: darkgreen;
 }
 
 /* customer login */
@@ -139,24 +255,29 @@
   /* background-image: url("https://t3.ftcdn.net/jpg/02/93/97/96/240_F_293979646_NUleDAp6GqyhT6dztQtuprvUDxuN2gFG.jpg"); */
   /* background-image: url("https://t4.ftcdn.net/jpg/06/25/12/35/240_F_625123594_WwODAA9CaW8TAtIA5tuX69su6JKfpl18.jpg"); */
   /* background-image: url("https://t3.ftcdn.net/jpg/06/16/88/06/240_F_616880663_zu38vhWozYlFc7yqKNDcXTdaIU4fuqPH.jpg"); */
-  background-image: url("https://t4.ftcdn.net/jpg/06/16/09/73/240_F_616097302_uNgcfX8z6v5se4AeC48kWdLUSxt3iXlc.jpg");
+  /* background-image: url("https://t4.ftcdn.net/jpg/06/16/09/73/240_F_616097302_uNgcfX8z6v5se4AeC48kWdLUSxt3iXlc.jpg"); */
+  /* background-image: url("  https://hips.hearstapps.com/hmg-prod/images/gettyimages-1430180814-647f3858edeb0.jpg"); */
+  background-image: url("  https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D");
+
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  margin-left: 10px;
 }
 
 .customerLoginForm {
-  width: 450px;
-  height: 480px;
-  background-color: lightblue;
+  width: 380px;
+  height: 440px;
+  /* background-color: rgb(86, 183, 7); */
   border-radius: 1em;
-  margin-bottom: 2em;
-  border: 2px solid green;
-  box-shadow: 1px 1px 1.1em darkgreen;
+  margin-bottom: 10em;
+  /* border: 2px solid green; */
+  box-shadow: 0.5px 0.5px 1.1em rgb(124, 152, 124);
   padding: 1em;
 }
 
@@ -164,6 +285,7 @@
   display: flex;
   justify-content: center;
   color: brown;
+  font-size: 28px;
 }
 
 .customerLogin-header {
@@ -181,6 +303,7 @@
 .navbar {
   color: white;
   font-weight: 500;
+
 }
 
 #basic-nav-dropdown {
@@ -198,9 +321,20 @@ button.navbar-toggler.collapsed {
 
 .navigation {
   position: fixed;
-  background-color: #202124;
+  /* background-color: #1d47c6; */
   transition: 0.2s;
   box-shadow: 1px 1px 1.1em lightgreen;
+  width: 450px;
+  border-radius: 50px;
+}
+
+.navigation-p {
+  position: fixed;
+  background-color: #519c8dbe;
+  /* transition: 0.2s; */
+  box-shadow: 1px 1px 1.1em lightgreen;
+  width: 450px;
+  border-radius: 50px;
 }
 
 .me-auto {
@@ -222,15 +356,17 @@ button.navbar-toggler.collapsed {
 
 .home-hd {
   font-size: 2em;
-  color: #2954d7;
+  /* color: #2954d7; */
+  visibility: hidden;
 }
 
 .name-hd {
   color: #04a917;
 }
 
-#home h2 {
-  font-size: 3.5em;
+
+.stack-hd {
+  margin-left: 80px;
 }
 
 /* Contact page design*/
@@ -295,7 +431,7 @@ button.navbar-toggler.collapsed {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1em;
+  gap: 4em;
 }
 
 .card {
@@ -399,6 +535,14 @@ button.navbar-toggler.collapsed {
 }
 
 .icon {
-  font-size: 2em;
-  color: red;
+  font-size: 2.3em;
+  color: yellow
 }
+
+/* .navbar .container-fluid {
+  width: 5px;
+} */
+
+/* .navigation container-fluid {
+  width: 5px;
+} */

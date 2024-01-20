@@ -10,7 +10,8 @@ import OrderedItems from "./products/OrderedItems";
 
 
 //backend url
-export const url ="https://fashionly-backend.onrender.com";
+// export const url ="https://fashionly-backend.onrender.com";
+export const url ="http://localhost:8000";
 
 
 function App() {

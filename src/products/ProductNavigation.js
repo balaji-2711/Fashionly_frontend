@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import { BsFillCartDashFill } from "react-icons/bs";
 import { useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
+import { SiYourtraveldottv } from "react-icons/si";
 
 function Navigation() {
   let navigate = useNavigate();
@@ -27,17 +28,18 @@ function Navigation() {
 
   return (
     //  <--Navigation details-->
-    <div className="navigation container-fluid">
+    <div className="navigation-p container-fluid">
       <Navbar bg="#0E1630" expand="lg">
         <Container fluid>
           <div className="icon">
-            <FaShoppingCart />
+            {/* <FaShoppingCart /> */}
+            <SiYourtraveldottv />
           </div>
           <Navbar.Brand
             onClick={() => navigate("/products")}
             style={{ color: "white", fontSize: "2em" }}
           >
-            <span className="color-green">F</span>ashionly
+            <span className="color-green">T</span>ravelX
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -48,12 +50,12 @@ function Navigation() {
             >
               <div className="me-3 p-2">
                 <Button variant="danger" onClick={() => navigate("/cart")}>
-                  Cart <BsFillCartDashFill />
+                  Bookings <BsFillCartDashFill />
                   <div
                     className="badge bg-white text-success position-absolute"
                     style={{ top: "10px" }}
                   >
-                     {itemCount.cartTotalQuantity} 
+                    {itemCount.cartTotalQuantity}
                   </div>
                 </Button>
               </div>
@@ -61,7 +63,6 @@ function Navigation() {
                 <Dropdown>
                   <Dropdown.Toggle variant="warning" id="dropdown-basic">
                     <CgProfile /> {name}
-                  
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>

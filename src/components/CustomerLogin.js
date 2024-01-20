@@ -51,11 +51,10 @@ function CustomerLogin() {
           }}
         >
           {({ errors, touched }) => (
-            <div className="container-fluid customer-login">
+            <div className="customer-login">
               <div className="customerLoginForm">
-               
                 <div className="customerLogin-title">
-                  <h1>Welcome to Fashionly</h1>
+                  <p>Have an account?</p>
                 </div>
 
                 <div className=" customerLogin-header ">
@@ -73,6 +72,7 @@ function CustomerLogin() {
                       type="email"
                       placeholder="Enter Email"
                     />
+                    <i class="bx bx-user"></i>
                     {errors.email && touched.email ? (
                       <div style={{ color: "red" }}>{errors.email}</div>
                     ) : null}
@@ -82,6 +82,8 @@ function CustomerLogin() {
                     <label htmlFor="password" className="text-black">
                       Password
                     </label>
+                    <i class="bx bx-lock-alt"></i>
+
                     <Field
                       name="password"
                       className="form-control"
@@ -94,19 +96,18 @@ function CustomerLogin() {
                   </div>
 
                   <div className="pt-3 d-flex justify-content-between">
-                    <Button variant="outline-secondary" type="submit">
+                    <Button variant="btn btn-success" type="submit">
                       Login
                     </Button>
-
-                  
                   </div>
                 </Form>
 
                 <div className="text-black text-center mt-2">
-                  <h6>New to Fashionly? Please Sign-Up</h6>
+                  <h6>New to TravelX? Please Sign-Up</h6>
                   <div>
                     <Button
-                      variant="outline-secondary"
+                      // variant="outline-secondary"
+                      variant="btn btn-info"
                       onClick={() => navigate("/customer-sign-up")}
                     >
                       Sign-Up
@@ -123,8 +124,3 @@ function CustomerLogin() {
 }
 
 export default CustomerLogin;
-
-
-
-
-

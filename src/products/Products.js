@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 import { addToCart } from "../redux/CartReducer";
 import { useState } from "react";
 import { FaRupeeSign } from "react-icons/fa";
-
 import axios from "axios";
 import { url } from "../App";
 import { toast } from "react-toastify";
@@ -47,7 +46,6 @@ function Products() {
         value,
       })
     );
-    
   };
 
   return (
@@ -57,11 +55,10 @@ function Products() {
         <ProductNavigation />
       </div>
       <div className="menu-body">
-        <div className="container-fluid px-4 px-lg-5 mt-5">
-      
+        <div className="container-fluid px-8 px-lg-5 mt-5">
           <div className="card-header">
             {items.products.map((e, i) => {
-                console.log(e);
+              console.log(e);
               return (
                 <div className="col mb-5 pt-5">
                   <div
@@ -100,7 +97,8 @@ function Products() {
 
                       <div className="d-flex justify-content-around">
                         <div>
-                          Qty-
+                          {/* Qty- */}
+                          Days
                           <select
                             onChange={(e) => setValue(e.target.value)}
                             style={{
@@ -110,12 +108,19 @@ function Products() {
                               borderRadius: "5px",
                             }}
                           >
-                            <option>0</option>
+                            {/* <option>0</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
+                            <option>5</option> */}
+
+                            <option>select days</option>
+                            <option>3</option>
                             <option>5</option>
+                            <option>7</option>
+                            <option>10</option>
+                            <option>14</option>
                           </select>
                         </div>
                       </div>
@@ -124,12 +129,9 @@ function Products() {
                       <div className="text-center">
                         <Button
                           variant="outline-success"
-                          onClick={() =>
-                           
-                           handleAddToCart({ e })}
-                           
+                          onClick={() => handleAddToCart({ e })}
                         >
-                          Add to Cart
+                          Book Now
                         </Button>
                       </div>
                     </div>

@@ -8,7 +8,7 @@ export const productReducer = createSlice({
   reducers: {
     addItems(state, action) {
       state.products = action.payload;
-    },
+    },  
     
   },
 });
