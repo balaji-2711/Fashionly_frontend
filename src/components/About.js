@@ -31,11 +31,6 @@ function About() {
               <b> top quality</b>
             </span>
             <br />
-            {/* <b>pieces you just can’t find anywhere else.</b> <br />
-            <b>
-              We are constantly curating fresh new collections and
-            </b> <br />{" "}
-            <b> looking for the next big thing our customers will love.</b> */}
           </h4>
           <br />
         </div>

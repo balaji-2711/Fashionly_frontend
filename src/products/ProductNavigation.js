@@ -49,7 +49,7 @@ function Navigation() {
               navbarScroll
             >
               <div className="me-3 p-2">
-                <Button variant="danger" onClick={() => navigate("/cart")}>
+                <Button variant="success" onClick={() => navigate("/cart")}>
                   Bookings <BsFillCartDashFill />
                   <div
                     className="badge bg-white text-success position-absolute"
